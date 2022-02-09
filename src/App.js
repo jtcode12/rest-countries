@@ -1,17 +1,19 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Header from './components/Header'
-import Filter from './components/Filter'
 import CountriesList from './components/CountriesList'
+import Country from './components/Country'
 
 
 function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <Filter />
-      <CountriesList />
-    </>
+      <Routes>
+        <Route exact path='/' element={<CountriesList/>}/>
+        <Route path='/countries/:name' element={<Country />}/>
+      </Routes>
+    </Router>
 
   )
 }

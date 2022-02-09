@@ -8,6 +8,9 @@ const Header = () => {
           <h1>Where in the World?</h1>
         </div>
 
+        <div>
+          <h4>Dark Mode</h4>
+        </div>
       </header>
 
     </>

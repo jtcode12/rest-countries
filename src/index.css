@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 
+:root {
+  --dark-bg-color: hsl(207, 26%, 17%);
+  --article-color: hsl(209, 23%, 22%);
+  --text-color: hsl(0, 0%, 100%);
+  --light-mode-text: hsl(200, 15%, 8%);
+  --light-mode-input: hsl(0, 0%, 52%);
+  --light-mode-background: hsl(0, 0%, 98%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +19,31 @@ img {
   max-width: 100%;
 }
 
+.link-btn {
+  background-color: var(--dark-bg-color);
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid var(--dark-bg-color);
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.link-btn:hover {
+  background-color: #fff;
+  color: var(--dark-bg-color);
+}
+
+.btn-light {
+  background-color: var(--article-color);
+  border: 2px solid var(--article-color);
+  color : #fff;
+}
+
 body {
   font-family: 'Numito Sans', sans-serif;
-  /* padding: 20px; */
+  padding: 20px;
   background-color: #202D36;
   color: #fff;
 }
@@ -107,6 +138,11 @@ body {
   font-weight: 300;
 }
 
+/* Country Page */
+
+.country {
+  padding: 50px;
+}
 
 @media (min-width: 640px) {
   .grid {
